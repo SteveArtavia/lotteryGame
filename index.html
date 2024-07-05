@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" class="container">
+
+        <div id="startScreen" class="card" >
+            <h1>Lottery</h1>
+            <button class="btn btn-primary" id="startBtn">Play</button>
+        </div>
+
+        <div id="mainScreen" class="card" style="display: none;">
+            <h2>Choose your number</h2>
+            <input type="text" id="numberInput" placeholder="0-99..."><br>
+            <input type="submit" id="chooseBtn" value="Choose Number" class="btn btn-primary">
+        </div>
+
+        <div id="resultScreen" class="card" style="display: none;">
+            <div id="win-container">
+                <p id="winNumber"></p>
+            </div>
+
+            <div id="number-container">
+                <p id="numberChosen"></p>
+            </div>
+
+            <p id="result"></p>
+            <button class="btn btn-primary" id="reloadBtn">Try Again</button>
+            
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
