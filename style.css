@@ -1,6 +1,7 @@
 body{
     margin: 20px;
     box-sizing: border-box;
+    background-color: #fff;
 }
 h1{
     font-size: 3em;
@@ -11,12 +12,22 @@ h1{
     margin: 20px 0;
     padding: 40px;
     border-radius: 20px;
+    background-color: #000;
+    color: white;
 }
 button{
     padding: 30px 10px !important;
     border-radius: 20px !important;
     width: 200px;
     margin: auto;
+    background-color: #D32F2F !important;
+    border: none !important;
+}
+button:hover{
+    background-color: #c02a2a !important;
+}
+button:active{
+    background-color: #a12424 !important;
 }
 input{
     padding: 15px 10px;
@@ -30,4 +41,12 @@ input[type='submit']{
     border-radius: 20px !important;
     width: 200px;
     margin: auto;
+    background-color: #D32F2F !important;
+    border: none !important;
+}
+input[type='submit']:hover{
+    background-color: #c02a2a !important;
+}
+input[type='submit']:active{
+    background-color: #a12424 !important;
 }
