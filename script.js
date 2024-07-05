@@ -27,10 +27,10 @@ function chooseMyNumber() {
         return;
     }
 
-    numberChosen.innerHTML = 'Your number<br>' + myNumber;
+    numberChosen.innerHTML = myNumber;
 
     winnerNumber = Math.round(Math.random() * 100);
-    winNumber.innerHTML = 'Winning number<br>' + winnerNumber;
+    winNumber.innerHTML = winnerNumber;
 
     mainScreen.style.display = 'none';
     resultScreen.style.display = 'block';

@@ -6,32 +6,46 @@
     <title>Lottery</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap">
+    <script src="https://kit.fontawesome.com/a9e6d69b36.js" crossorigin="anonymous"></script>
+
+
+
 </head>
 <body>
     <div id="app" class="container">
 
-        <div id="startScreen" class="card" >
-            <h1>Lottery</h1>
-            <button class="btn btn-primary" id="startBtn">Play</button>
+        <div id="startScreen" class="card animate__animated animate__bounceInDown" >
+            <i class="fa-solid fa-sack-dollar animate__animated animate__bounceInDown animate__slow"></i>
+            <h1 class="animate__animated animate__bounceInDown animate">Lottery</h1>
+            <button class="btn btn-primary animate__animated animate__slow animate__tada animate__infinite" id="startBtn">Play</button>
         </div>
 
-        <div id="mainScreen" class="card" style="display: none;">
-            <h2>Choose your number</h2>
-            <input type="text" id="numberInput" placeholder="0-99..."><br>
-            <input type="submit" id="chooseBtn" value="Choose Number" class="btn btn-primary">
+        <div id="mainScreen" class="card animate__animated animate__slideInRight" style="display: none;">
+            <h2 class="animate__animated animate__bounceInRight">Choose your number</h2>
+            <input type="text" id="numberInput" placeholder="0-99..." class="animate__animated animate__bounceInDown animate__slow"><br>
+            <input type="submit" id="chooseBtn" value="Choose Number" class="btn btn-primary animate__animated animate__bounceInDown animate__slower">
         </div>
 
-        <div id="resultScreen" class="card" style="display: none;">
-            <div id="win-container">
-                <p id="winNumber"></p>
+        <div id="resultScreen" class="card animate__animated animate__bounceInRight" style="display: none;">
+
+            <div id="numbers-container" class="container">
+                <div id="number-container">
+                    Your Number
+                    <p id="numberChosen"></p>
+                </div>
+    
+                <div id="win-container">
+                    Winning Number
+                    <p id="winNumber"></p>
+                </div>
             </div>
 
-            <div id="number-container">
-                <p id="numberChosen"></p>
+            <div id="finalResult">
+                <p id="result"></p>
+                <button class="btn btn-primary mt-5 animate__animated animate__heartBeat animate__infinite" id="reloadBtn">Try Again</button>
             </div>
-
-            <p id="result"></p>
-            <button class="btn btn-primary mt-5" id="reloadBtn">Try Again</button>
             
         </div>
 
