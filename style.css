@@ -64,12 +64,16 @@ input[type='submit']:active{
     margin-bottom: 40px;
 }
 #numbers-container p{
-    font-size: 4em;
+    font-size: 2em;
+    padding: 10px;
     border-radius: 10px;
     font-weight: bold;
     background-color: #D32F2F;
     --webkit-background-clip: text;
     --webkit-text-fill-color: transparent;
     margin-top: 20px;
-    width: 150px;
+    width: 100%;
+}
+#number-container{
+    margin-right: 20px;
 }
